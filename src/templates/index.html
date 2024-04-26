@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/landing.css" />
+    <link rel="stylesheet" href="../static/css/barchart.css" />
+    <link rel="stylesheet" href="../static/css/sunburst.css" />
+    <link rel="stylesheet" href="../static/css/geomap.css" />
+    <title>Visualization Dashboard</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        function handleclick(e) {
+            console.log(e.target.dataset.debtAmount)
+                // document.getElementById('loader').style.display = 'block'
+            loadData(e.target.dataset.debtAmount)
+            e.stopPropagation()
+        }
+    </script>
+</head>
+
+<body class="mybody" id="wholebody">
+    <!-- <div id="sliderx"></div> -->
+    <a href="/pcp.html"></a>
+    <div id="header">
+        <h1 class="globalplayers">FIFA Dataset Visualization</h1>
+        <button id="resetButton" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 0px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2022
+          </button>
+        <button id="resetButton2021" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 60px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2021
+          </button>
+        <button id="resetButton2020" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 120px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2020
+          </button>
+        <button id="resetButton2019" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 180px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2019
+          </button>
+        <button id="resetButton2018" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 240px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2018
+          </button>
+        <button id="resetButton2017" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 300px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210)">
+            2017
+          </button>
+        <button id="resetButton2016" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 360px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210);">
+            2016
+          </button>
+        <button id="resetButton2015" onclick="reloadPage()" style="font-size: 12px;
+            font-weight: 600; position: fixed;
+            top: 0px; right: 420px; margin: 8px; padding: 0px;
+            color: rgb(224, 210, 210);">
+            2015
+          </button>
+    </div>
+    <div id="visdashboard">
+        <div id="geoMap">
+            <h1>Location based player distribution</h1>
+        </div>
+        <div id="sunburst">
+            <h1>Position based player distribution</h1>
+            <div id="explanation">
+                <span id="percentage"></span><br/>
+            </div>
+        </div>
+        <div id="barchart">
+            <h1>League based player distribution</h1>
+        </div>
+        <div id="pcp">
+            <h1>Player Attributes mapping</h1>
+        </div>
+        <div id="wordcloud">
+        </div>
+        <div id="colorlegend">
+        </div>
+    </div>
+    <script src="../static/js/geoMap.js"></script>
+    <script src="../static/js/barchart.js"></script>
+    <script src="../static/js/sunburst.js"></script>
+    <script src="../static/js/wordcloud.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/pcp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+</body>
+
+</html>

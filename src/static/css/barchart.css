@@ -1,0 +1,14 @@
+#barchart {
+    display: block;
+}
+
+/* #barchart g {
+    stroke: white;
+    fill: white
+} */
+
+#barchart text {
+    font-weight: 300;
+    font-size: 12px;
+    fill: black;
+}

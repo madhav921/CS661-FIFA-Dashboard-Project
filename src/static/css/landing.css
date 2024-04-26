@@ -1,0 +1,279 @@
+.mybody .globalplayers {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0px;
+    height: 100%;
+    vertical-align: middle;
+    padding-top: 4px;
+    color: #ddd;
+}
+
+.mybody {
+    font-family: Sans-serif;
+    font-size: 8px;
+    background: #625c6c;
+}
+
+.tooltip {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+.bartooltip {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+text {
+    transition: font-size 1s;
+    cursor: pointer;
+}
+
+.mybody h1 {
+    font-size: 16px;
+    color: darkslateblue;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 65%;
+    text-align: center;
+}
+
+#visdashboard h1 {
+    width: 100%;
+    color: black;
+    padding-top: 5px;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+    height: 800;
+}
+
+#visdashboard {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 37vw 5vw 25vw 5vw 25vw;
+    grid-template-rows: 50vh 5vh 5vh 29vh;
+    height: 95vh;
+    width: 100vw;
+    position: fixed;
+}
+
+#pcp,
+#sunburst,
+#geoMap,
+#barchart,
+#wordcloud {
+    background: rgb(206, 197, 197);
+}
+
+#geoMap {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#sunburst {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#barchart {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 4;
+}
+
+#wordcloud {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
+}
+
+#pcp {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 3;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+#header {
+    height: 7vh;
+}
+
+rect.selection {
+    stroke: none;
+    fill: steelblue;
+    fill-opacity: 0.6;
+}
+
+#labelleft,
+#labelright {
+    dominant-baseline: hanging;
+    font-size: 12px;
+}
+
+#labelleft {
+    text-anchor: end;
+}
+
+#labelright {
+    text-anchor: start;
+}
+
+.background path {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+.foreground path {
+    fill: none;
+    stroke: steelblue;
+}
+
+.brush .selection {
+    fill-opacity: .3;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+#sbpercentage {
+    font-size: 2.5em;
+}
+
+.legendradar {
+    font-family: 'Raleway', sans-serif;
+    fill: #333333;
+}
+
+.tooltipradar {
+    fill: #333333;
+}
+
+#resetButton {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2021 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2020 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2019 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2018 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2017 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2016 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton2015 {
+    width: 56px;
+    /* display: inline-block; */
+    background-color: #8c82c5;
+    transition-duration: 0.4s;
+    height: 32px;
+    text-align: center;
+}
+
+#resetButton:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2021:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2020:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2019:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2018:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2017:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2016:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
+
+#resetButton2015:hover {
+    border: 2px solid #af4c4c;
+    /* Green */
+    background-color: #483C8A;
+}
